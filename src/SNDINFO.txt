@@ -1,0 +1,159 @@
+$playersound	tiger	male	*death		BOOM
+$playersounddup	tiger	male	*xdeath		*death
+$playersounddup	tiger	male	*gibbed		*death
+$playersound	tiger	male	*pain100	TIGER
+$playersounddup	tiger	male	*pain75		*pain100
+$playersounddup	tiger	male	*pain50		*pain100
+$playersounddup	tiger	male	*pain25		*pain100
+$playersound	tiger	male	*grunt		TIGER
+$playersound	tiger	male	*land		nosound
+$playersounddup	tiger	male	*jump		*land
+$playersounddup	tiger	male	*fist		*land
+$playersound	tiger	male	*usefail	TIGER
+
+$playersound	elephant	male	*death		BOOM
+$playersounddup	elephant	male	*xdeath		*death
+$playersounddup	elephant	male	*gibbed		*death
+$playersound	elephant	male	*pain100	ELEPHANT
+$playersounddup	elephant	male	*pain75		*pain100
+$playersounddup	elephant	male	*pain50		*pain100
+$playersounddup	elephant	male	*pain25		*pain100
+$playersound	elephant	male	*grunt		ELEPHANT
+$playersound	elephant	male	*land		nosound
+$playersounddup	elephant	male	*jump		*land
+$playersounddup	elephant	male	*fist		*land
+$playersound	elephant	male	*usefail	ELEPHANT
+
+$playersound	raccoon	male	*death		BOOM
+$playersounddup	raccoon	male	*xdeath		*death
+$playersounddup	raccoon	male	*gibbed		*death
+$playersound	raccoon	male	*pain100	RACCOON
+$playersounddup	raccoon	male	*pain75		*pain100
+$playersounddup	raccoon	male	*pain50		*pain100
+$playersounddup	raccoon	male	*pain25		*pain100
+$playersound	raccoon	male	*grunt		RACCOON
+$playersound	raccoon	male	*land		nosound
+$playersounddup	raccoon	male	*jump		*land
+$playersounddup	raccoon	male	*fist		*land
+$playersound	raccoon	male	*usefail	RACCOON
+
+$playersound	shark	male	*death		BOOM
+$playersounddup	shark	male	*xdeath		*death
+$playersounddup	shark	male	*gibbed		*death
+$playersound	shark	male	*pain100	SHARK
+$playersounddup	shark	male	*pain75		*pain100
+$playersounddup	shark	male	*pain50		*pain100
+$playersounddup	shark	male	*pain25		*pain100
+$playersound	shark	male	*grunt		SHARK
+$playersound	shark	male	*land		nosound
+$playersounddup	shark	male	*jump		*land
+$playersounddup	shark	male	*fist		*land
+$playersound	shark	male	*usefail	SHARK
+
+$playersound	panda	male	*death		BOOM
+$playersounddup	panda	male	*xdeath		*death
+$playersounddup	panda	male	*gibbed		*death
+$playersound	panda	male	*pain100	PANDA
+$playersounddup	panda	male	*pain75		*pain100
+$playersounddup	panda	male	*pain50		*pain100
+$playersounddup	panda	male	*pain25		*pain100
+$playersound	panda	male	*grunt		PANDA
+$playersound	panda	male	*land		nosound
+$playersounddup	panda	male	*jump		*land
+$playersounddup	panda	male	*fist		*land
+$playersound	panda	male	*usefail	PANDA
+
+$playersound	camel	male	*death		BOOM
+$playersounddup	camel	male	*xdeath		*death
+$playersounddup	camel	male	*gibbed		*death
+$playersound	camel	male	*pain100	CAMEL
+$playersounddup	camel	male	*pain75		*pain100
+$playersounddup	camel	male	*pain50		*pain100
+$playersounddup	camel	male	*pain25		*pain100
+$playersound	camel	male	*grunt		CAMEL
+$playersound	camel	male	*land		nosound
+$playersounddup	camel	male	*jump		*land
+$playersounddup	camel	male	*fist		*land
+$playersound	camel	male	*usefail	CAMEL
+
+$playersound	moose	male	*death		BOOM
+$playersounddup	moose	male	*xdeath		*death
+$playersounddup	moose	male	*gibbed		*death
+$playersound	moose	male	*pain100	MOOS
+$playersounddup	moose	male	*pain75		*pain100
+$playersounddup	moose	male	*pain50		*pain100
+$playersounddup	moose	male	*pain25		*pain100
+$playersound	moose	male	*grunt		MOOS
+$playersound	moose	male	*land		nosound
+$playersounddup	moose	male	*jump		*land
+$playersounddup	moose	male	*fist		*land
+$playersound	moose	male	*usefail	MOOS
+
+$playersound	bird	male	*death		BOOM
+$playersounddup	bird	male	*xdeath		*death
+$playersounddup	bird	male	*gibbed		*death
+$playersound	bird	male	*pain100	BIRD
+$playersounddup	bird	male	*pain75		*pain100
+$playersounddup	bird	male	*pain50		*pain100
+$playersounddup	bird	male	*pain25		*pain100
+$playersound	bird	male	*grunt		BIRD
+$playersound	bird	male	*land		nosound
+$playersounddup	bird	male	*jump		*land
+$playersounddup	bird	male	*fist		*land
+$playersound	bird	male	*usefail	BIRD
+
+$playersound	duck	male	*death		BOOM
+$playersounddup	duck	male	*xdeath		*death
+$playersounddup	duck	male	*gibbed		*death
+$playersound	duck	male	*pain100	DUCK
+$playersounddup	duck	male	*pain75		*pain100
+$playersounddup	duck	male	*pain50		*pain100
+$playersounddup	duck	male	*pain25		*pain100
+$playersound	duck	male	*grunt		DUCK
+$playersound	duck	male	*land		nosound
+$playersounddup	duck	male	*jump		*land
+$playersounddup	duck	male	*fist		*land
+$playersound	duck	male	*usefail	DUCK
+
+player/submarine		SUB
+$limit player/submarine 0
+
+player/water		WATER
+$limit player/water 0
+
+player/water2		WATER2
+$limit player/water2 0
+
+items/tiger			TIGER
+items/elephant		ELEPHANT
+items/raccoon		RACCOON
+items/shark			SHARK
+items/panda			PANDA
+items/camel			CAMEL
+items/moose			MOOS
+items/bird			BIRD
+items/duck			DUCK
+
+weapons/nope		NOPE
+$limit weapons/nope 0
+
+weapons/gopher		GOPHER
+$limit weapons/gopher 0
+weapons/gopherhit	GOPHERHT
+$limit weapons/gopherhit 0
+
+weapons/fire		WWFIRE
+$limit weapons/fire 0
+
+weapons/drop		DROP
+$limit weapons/drop 0
+
+menu/activate		nosound	// Activate a new menu
+menu/backup			nosound	// Backup to previous menu
+menu/prompt			nosound	// Activate a prompt "menu"
+menu/cursor			nosound	// Move cursor up/down
+menu/change			nosound	// Select new value for option
+menu/invalid		NOPE	// Menu not available
+menu/dismiss		nosound	// Dismiss a prompt message
+menu/choose			nosound	// Choose a menu item
+menu/clear			nosound	// Close top menu

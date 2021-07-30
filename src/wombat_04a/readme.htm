@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFCC33;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style1 {color: #000000}
+.style2 {font-weight: bold}
+-->
+</style>
+</head>
+
+<body>
+<h3>Wombat Game Tools  0.4a</h3>
+<p>Wombat basically lets you view the data in a some games from the early 90's, from classic gaming companies such as Apogee and Epic Megagames, and a few newer games to boot. It also lets you change the data in a few games, but this feature is new and not available for all games.</p>
+<p>If you wanna talk to me - I'm at <strong>szevvy@hotmail.com</strong><br>
+  The official Wombat website is at <a href="http://student.ci.qut.edu.au/%7En4738667">http://student.ci.qut.edu.au/~n4738667</a><br>
+  <br>
+<strong>All you need to know:</strong>  <ul><li>To scroll images or levels, just use the mouse to click-and-drag.</li>
+  <li>The 'replace' button will NOT convert files to the format required by the game; files must be in the format that the game expects - use the 'import' button if you want to change images from bmp format to the format used by the game.</li>
+  </ul>
+<p><strong>Kudos go to:</strong></p>
+<ul>
+  <li>Frenkel Smeijers - many, many drivers are based on Frenkel's work </li>
+  <li>Andy Durdin - all the Commander Keen drivers are based on Andy's ModKeen program </li>
+  <li> Dave Bollinger - for his work on Duke Nukem 2 </li>
+  <li>Admiral_Bob - for the Alien Carnage extractor </li>
+</ul>
+<h3>What's new:</h3>
+<h4><strong>Wombat 0.4a:</strong> </h4>
+<ul>
+  <li>Fixed a nasty little bug in Keen Dreams that would crash Wombat if you tried to open a directory</li>
+  <li>Fixed a Biomenace bug (i.e. worked around the problems of my compiler, *sigh*)</li>
+  <li>Added Wolfenstein 3D, pictures and tiles only, no sprites yet</li>
+</ul>
+<h4><strong>Wombat 0.4:</strong> </h4>
+<p><strong>New features:</strong></p>
+<ul>
+  <li>Games are now split into A-M and N-Z </li>
+  <li>'Unknown image' now handles both EGA and VGA, plus 16-bit images</li>
+</ul>
+<p><strong>New games supported:</strong></p>
+<ul>
+  <li><em>Keen 4-6, Keen Dreams </em>: all tiles, sprites, and  images (let me know if any versions of these games have problems) </li>
+  <li><em>Biomenace</em>: all tiles, sprites, and images </li>
+  <li><em>Civilization 3</em>: extract from any .zfs, view images and play sounds (no tiles or sprites yet)</li>
+  <li><em>Dangerous Dave</em>: all images, tiles, and sprites - colours are incorrect, though  </li>
+</ul>
+<p><strong>Games with increased support:</strong></p>
+<ul>
+  <li><em>None in this release </em></li>
+</ul>
+<p><strong>Current progress (a 0% in sound or music only means that Wombat itself cannot play the sound/music; other programs might be able to once you extract the file):<br>
+<img src="edit.gif"/> = full edit, <img src="editp.gif"/> = partial edit </strong></p>
+<table width="100%"  border="1" bordercolor="#000000" style="text-align:center">
+  <tr bgcolor="#CCFFFF">
+    <th width="20%" bgcolor="#CCFFFF" scope="col"><span class="style2 style1">Game</span></th>
+    <th width="9%" scope="col">Extraction</th>
+    <th width="11%" scope="col">View tiles </th>
+    <th width="12%" scope="col">View sprites </th>
+    <th width="11%" scope="col">View images </th>
+    <th width="13%" scope="col">Listen to music </th>
+    <th width="13%" scope="col">Listen to sound</th>
+    <th width="11%" scope="col">View levels </th>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">7 Cities of Gold (VGA) </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#FF5050"> 0% </td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Alien Carnage </td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Baron Baldric </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Biomenace</span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Cannon Fodder (1 &amp; 2)</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FFEF40">60%</td>
+    <td bgcolor="#FF8F4A">20%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Civilization 3 </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Clyde 1 </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Clyde's Revenge </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Captain Comic 1 </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#FFCD45">50%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Commander Keen 1-3 </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Commander Keen 4-6 </span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Commander Keen Dreams </span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Cosmo's Cosmic Adventure </span></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Crystal Caves </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Dangerous Dave </span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Dark Ages </td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Duke Nukum 1 </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Duke Nukem 2 </span></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#60FF60">100%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Duke Nukem 3D </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Dune 2 </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FFCD45">50%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Gateworld</span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Jazz Jackrabbit </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF8F4A">20%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Jill of the Jungle </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Halloween Harry </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#A0FF60">90%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Hocus Pocus </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Major Stryker </span></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Math Rescue </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Monster Bash</span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#DCFF48">75%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">PixelPainter games </span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">ScubaVenture</span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#DCFF48">75%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Secret Agent </span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Sid Meier's Pirates! (2004) </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#FF7055">5%</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#99CCFF">N/A</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Simcity 2000 </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FFCD45">50%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF">Thief 3 </td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Traffic Dept. 2192</span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#A0FF60">90%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Wacky Wheels </span></td>
+    <td bgcolor="#60FF60">100%<img src="edit.gif"/></td>
+    <td bgcolor="#60FF60">100%<strong><img src="edit.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%<strong><img src="edit.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FFCD45">50%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Wolfenstein 3D</span></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Word Rescue</span></td>
+    <td bgcolor="#60FF60">100%<strong><img src="editp.gif"/></strong></td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCFFFF"><span class="style1">Xargon</span></td>
+    <td bgcolor="#99CCFF">N/A</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#60FF60">100%</td>
+    <td bgcolor="#DCFF48">75%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+    <td bgcolor="#FF5050">0%</td>
+  </tr>
+</table>
+<h4><strong>History</strong></h4>
+<h5><em><strong>Wombat 0.3: </strong></em></h5>
+<p><strong>New features:</strong></p>
+<ul>
+  <li>Import bitmaps into:
+      <ul>
+        <li><em>Major Stryker</em>: all expect fonts </li>
+        <li><em>Cosmo</em>: all except story images and sprites, tile attributes cannot be set yet </li>
+        <li><em>Duke Nukum 1: </em>fullscreen images</li>
+        <li><em>Captain Comic 1: </em>fullscreen images</li>
+        <li><em>Duke 2</em>: backdrops </li>
+        <li><em>Crystal Caves</em>: fonts and statusbar</li>
+      </ul>
+  </li>
+  <li>Bugfixes for multiple-file extraction, amongst others </li>
+  <li>More .voc support, 2 and 2.6 bit voc's now play </li>
+</ul>
+<p><strong>New games supported:</strong></p>
+<ul>
+  <li><em>Halloween Harry, Alien Carnage</em>: all tiles, sprites, and most other images</li>
+  <li><em>Baron Baldric</em>: extract, view tiles</li>
+  <li><em>Thief 3</em>: extract only</li>
+</ul>
+<p><strong>Games with increased support:</strong></p>
+<ul>
+  <li><em>Hocus Pocus</em>: Fixed up some names and things</li>
+  <li><em>Cannon Fodder 1 &amp; 2</em>: Drawing more images, colours are closer to what they should be</li>
+  <li><em>Simcity 2000: </em>Drawing some images now, although all buildings and so on are still compressed </li>
+</ul>
+<h5><em><strong>Wombat 0.2a:</strong> </em></h5>
+<p><strong>New features:</strong></p>
+<ul>
+  <li>Got rid of the keyboard scroll in level viewers and that nasty image scroller in images, and replaced it with mouse-drag to scroll everything.</li>
+</ul>
+<p><strong>New games supported:</strong></p>
+<ul>
+  <li>Duke Nukem 3D (extract, play sounds)</li>
+  <li>Sid Meier's Pirates! (2004) (extract, view 5% of images (the rest are .dds))</li>
+</ul>
+<p><strong>Games with increased support:</strong></p>
+<ul>
+  <li>Duke Nukem 2: fixed palette issues with a few sprite images </li>
+  <li>Hocus Pocus: Added support for version 1.1</li>
+</ul>
+<h5><em><strong>Wombat 0.2:</strong></em></h5>
+<p><strong>New features:</strong> </p>
+<ul>
+  <li>Extract multiple files at a time - extract whole packed files if you wish, or just the images - whatever you need! </li>
+  <li>Wombat is now much faster and more stable - Duke 2 sprites are now fast!</li>
+  <li>Replace same-sized files in packed files all games except Monster Bash and Cannon Fodder 1 &amp; 2</li>
+  <li>Replace any files in packed files for Cosmo, Major Stryker, Duke 2 and Wacky Wheels </li>
+  <li>Export .snd files to wav</li>
+  <li>Play and export most .voc files </li>
+  <li>Many improvements to unknown EGA/VGA image driver</li>
+  <li>Palette files are now seperated, and they draw </li>
+  <li>.exe string viewer tool has been added</li>
+  <li>Many improvements to program layout </li>
+</ul>
+<p><strong>New games supported:</strong> </p>
+<ul>
+  <li>Commander Keen 1-3: all graphics - thanks Andy Durdin! </li>
+  <li>Jill of the Jungle: all graphics </li>
+  <li>Xargon: all graphics (I hope) </li>
+  <li>Traffic Department 2192: all images </li>
+  <li>Dark Ages: most images </li>
+  <li>7 cities of gold VGA: all .m52 images, about half have wrong colours </li>
+  <li>Jazz Jackrabbit: 'planet' images only </li>
+  <li>Prehistorik 1: extract all files, play sounds </li>
+  <li>Simcity 2000: extract all data, play sounds</li>
+  <li>Cannon Fodder 1 &amp; 2 - extract all files except sounds, view fullsceen images and tiles </li>
+</ul>
+<p><strong>Games with increased support:</strong> </p>
+<ul>
+  <li>Wacky wheels: level viewer added (not complete) </li>
+  <li>Monster bash / ScubaVenture: decompression fixed </li>
+  <li>Gateworld: sprite and tile support added, that should be all graphics</li>
+  <li>Dune 2: fullscreen images and small images draw, no units or tiles yet </li>
+  <li>Major Stryker: font files show up now </li>
+  <li>Hocus Pocus: added file names for images and music, separating what I suspect is level tile-data into seperate folder </li>
+  <li>Clyde's Adventure: drawing all sprites now </li>
+  <li>Duke Nukem 2: level viewer added </li>
+  <li>Various small improvements to many games </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

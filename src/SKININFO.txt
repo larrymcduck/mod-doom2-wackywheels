@@ -1,0 +1,121 @@
+{
+	name = "Tigi"
+	sprite = TIGR
+	class = Driver
+	dsoof = TIGER
+	dsnoway = TIGER
+	dstaunt = TIGER
+	dsplpain = TIGER
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Blombo"
+	sprite = ELPH
+	class = Driver
+	dsoof = ELEPHANT
+	dsnoway = ELEPHANT
+	dstaunt = ELEPHANT
+	dsplpain = ELEPHANT
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Ringo"
+	sprite = RACN
+	class = Driver
+	dsoof = RACCOON
+	dsnoway = RACCOON
+	dstaunt = RACCOON
+	dsplpain = RACCOON
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Razer"
+	sprite = SHRK
+	class = Driver
+	dsoof = SHARK
+	dsnoway = SHARK
+	dstaunt = SHARK
+	dsplpain = SHARK
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Uno"
+	sprite = PNDA
+	class = Driver
+	dsoof = PANDA
+	dsnoway = PANDA
+	dstaunt = PANDA
+	dsplpain = PANDA
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Sultan"
+	sprite = CAML
+	class = Driver
+	dsoof = CAMEL
+	dsnoway = CAMEL
+	dstaunt = CAMEL
+	dsplpain = CAMEL
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Morris"
+	sprite = MOOS
+	class = Driver
+	dsoof = MOOS
+	dsnoway = MOOS
+	dstaunt = MOOS
+	dsplpain = MOOS
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Peggles"
+	sprite = BIRD
+	class = Driver
+	dsoof = BIRD
+	dsnoway = BIRD
+	dstaunt = BIRD
+	dsplpain = BIRD
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Wacky"
+	sprite = DUK1
+	class = Driver
+	dsoof = DUCK
+	dsnoway = DUCK
+	dstaunt = DUCK
+	dsplpain = DUCK
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Digger"
+	sprite = DUK2
+	class = Driver
+	dsoof = DUCK
+	dsnoway = DUCK
+	dstaunt = DUCK
+	dsplpain = DUCK
+	dspdiehi = BOOM
+	dspldeth = BOOM
+}
+{
+	name = "Mario"
+	sprite = MRIO
+	class = Driver
+	dsoof = MARIOGET
+	dsnoway = MARIOGET
+	dstaunt = MARIOGET
+	dsplpain = MARIOGET
+	dspdiehi = MARIODIE
+	dspldeth = MARIODIE
+}

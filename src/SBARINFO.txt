@@ -1,0 +1,84 @@
+height 0;
+monospacefonts true, "0";
+
+statusbar fullscreen, fullscreenoffsets
+{
+	drawimage "HUD", 136, 12;
+	
+	//drawnumber 1,WACKY,untranslated,Lives,254,22;
+	drawnumber 2,WACKY,untranslated,GopherAmmo,fillzeros,398,22;
+	
+	//drawimage "HUD2", 0,-38;
+	//drawnumber 2,WACKY2,untranslated,Speed,50,-34;
+
+	InInventory FireballItem, 1
+	{
+		drawimage "FIREWEAP",-52,-42;
+	}
+	
+	InInventory IceItem, 1
+	{
+		drawimage "ICEEWEAP",-52,-42;
+	}
+	
+	InInventory OilItem, 1
+	{
+		drawimage "OILSWEAP",-52,-42;
+	}
+	
+	InInventory BallItem, 1
+	{
+		drawimage "BALLWEAP",-52,-42;
+	}
+	
+	InInventory BombItem, 1
+	{
+		drawimage "BOMBWEAP",-52,-42;
+	}
+	
+	gamemode deathmatch
+	{
+		drawnumber 2147483647, WACKY, untranslated, frags, drawshadow, -3, 1;
+	}
+}
+
+statusbar normal, fullscreenoffsets
+{
+	drawimage "HUD", 136, 12;
+	
+	//drawnumber 1,WACKY,untranslated,Lives,254,22;
+	drawnumber 2,WACKY,untranslated,GopherAmmo,fillzeros,398,22;
+	
+	//drawimage "HUD2", 0,-38;
+	//drawnumber 2,WACKY2,untranslated,Speed,50,-34;
+
+	InInventory FireballItem, 1
+	{
+		drawimage "FIREWEAP",-52,-42;
+	}
+	
+	InInventory IceItem, 1
+	{
+		drawimage "ICEEWEAP",-52,-42;
+	}
+	
+	InInventory OilItem, 1
+	{
+		drawimage "OILSWEAP",-52,-42;
+	}
+	
+	InInventory BallItem, 1
+	{
+		drawimage "BALLWEAP",-52,-42;
+	}
+	
+	InInventory BombItem, 1
+	{
+		drawimage "BOMBWEAP",-52,-42;
+	}
+	
+	gamemode deathmatch
+	{
+		drawnumber 2147483647, WACKY, untranslated, frags, drawshadow, -3, 1;
+	}
+}

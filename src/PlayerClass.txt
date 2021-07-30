@@ -1,0 +1,732 @@
+Actor Driver : PlayerPawn
+{
+	+NOBLOOD
+	Speed 1
+	Health 1
+	Radius 16
+	Height 56
+	Mass 99999
+	Player.ColorRange 112, 127
+	Player.DisplayName "Driver"
+	Player.SoundClass "tiger"
+	Player.StartItem "Lives", 3
+	Player.StartItem "GopherShooter"
+	Player.WeaponSlot 1, GopherShooter
+	Player.SideMove 0,0
+	Player.ForwardMove 1.2
+	Player.JumpZ 0
+	Player.ViewHeight 28
+	States
+	{
+		Spawn:
+			PLAY A 1
+			PLAY A 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			Loop
+		See:
+			PLAY A 1
+			PLAY A 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			PLAY A 1
+			PLAY A 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			PLAY A 1
+			PLAY A 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			PLAY B 1
+			PLAY B 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			PLAY B 1
+			PLAY B 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			PLAY B 1
+			PLAY B 0 A_JumpIf(waterlevel == 1,"IntoDeepWater")
+			Loop
+		IntoDeepWater:
+			SUBM A 0 A_SpawnItemEx("WaterChange")
+			SUBM A 0 A_PlaySound("player/water")
+			Goto DeepWater
+		OutDeepWater:
+			SUBM A 0 A_SpawnItemEx("WaterChange")
+			SUBM A 0 A_PlaySound("player/water")
+			Goto Spawn
+		DeepWater:
+			SUBM A 0 A_PlaySound("player/submarine")
+			SUBM A 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM A 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM A 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM B 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM B 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM B 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM C 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM C 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM C 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM D 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM D 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM D 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM E 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM E 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM E 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM F 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM F 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM F 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM G 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM G 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM G 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM H 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM H 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			SUBM H 1
+			SUBM A 0 A_JumpIf(waterlevel == 0,"OutDeepWater")
+			Loop
+		Death:
+			DIED A 0 A_PlayerScream
+			DIED A 0 A_NoBlocking
+			DIED ABCD 3 Bright
+			DIED E -1
+			Stop
+	}
+}
+
+Actor WaterChange
+{
+	Radius 16
+	Height 32
+	
+	+FLOORHUGGER
+	+NOBLOCKMAP
+	
+	RenderStyle Add
+	
+	States
+	{
+		Spawn:
+			WATR CDEF 3 Bright
+			Stop
+	}
+}
+
+Actor Splash
+{
+	Radius 16
+	Height 32
+	
+	+FLOORHUGGER
+	+NOBLOCKMAP
+	
+	RenderStyle Add
+	
+	States
+	{
+		Spawn:
+			WATR AB 3 Bright
+			Stop
+	}
+}
+
+Actor Speed : Inventory
+{
+	Inventory.MaxAmount 99
+}
+
+Actor Lives : Inventory
+{
+	Inventory.MaxAmount 9
+}
+
+Actor FireballItem : Inventory
+{
+	Inventory.MaxAmount 1
+}
+
+Actor BallItem : FireballItem
+{
+}
+
+Actor BombItem : FireballItem
+{
+}
+
+Actor OilItem : FireballItem
+{
+}
+
+Actor IceItem : FireballItem
+{
+}
+
+Actor MiniTrack01 : Inventory
+{
+	States
+	{
+		Spawn:
+			GAM1 AB 3
+			Loop
+	}
+	Inventory.MaxAmount 99
+}
+
+Actor GopherShooter : Weapon
+{
+	Weapon.AmmoUse 0
+	States
+	{
+		Spawn:
+			TNT1 A -1
+			Stop
+		Ready:
+			TNT1 A 0 A_TakeInventory("IceHold",999)
+			TNT1 A 1 A_WeaponReady
+			Loop
+		Select:
+			TNT1 A 1 A_Raise
+			Loop
+		Deselect:
+			TNT1 A 1 A_Lower
+			Loop
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("GopherAmmo",1,"FireGopher")
+			TNT1 A 0 A_PlaySound("weapons/nope")
+			TNT1 A 0 A_ReFire
+		FireGopher:
+			TNT1 A 1 A_FireCustomMissile("GopherMissile")
+			TNT1 A 0 A_TakeInventory("GopherAmmo",1)
+			TNT1 A 0 A_ReFire
+			Goto Ready
+		Hold:
+			TNT1 A 1 A_GiveInventory("IceHold",1)
+			TNT1 A 0 A_JumpIfInventory("IceHold",70,2)
+			TNT1 A 0 A_ReFire
+			Goto Ready
+			TNT1 A 0 A_TakeInventory("FireballItem",1)
+			TNT1 A 0 A_TakeInventory("BallItem",1)
+			TNT1 A 0 A_TakeInventory("BombItem",1)
+			TNT1 A 0 A_TakeInventory("OilItem",1)
+			TNT1 A 0 A_TakeInventory("IceHold",999)
+			TNT1 A 0 A_JumpIfInventory("IceItem",1,"NoNeed")
+			TNT1 A 0 A_GiveInventory("IceItem",1)
+			TNT1 A 0 A_PlaySound("*grunt")
+		NoNeed:
+			TNT1 A 0 A_ReFire
+			Goto Ready
+		AltFire:
+			TNT1 A 0 A_JumpIfInventory("FireballItem",1,"FireBall")
+			TNT1 A 0 A_JumpIfInventory("BallItem",1,"Ball")
+			TNT1 A 0 A_JumpIfInventory("OilItem",1,"Oil")
+			TNT1 A 0 A_JumpIfInventory("BombItem",1,"Bomb")
+			TNT1 A 0 A_JumpIfInventory("IceItem",1,"Ice")
+			Goto Ready
+		FireBall:
+			TNT1 A 0 A_TakeInventory("FireballItem",1)
+			TNT1 A 0 A_FireCustomMissile("FireballMissile",-5)
+			TNT1 A 0 A_FireCustomMissile("FireballMissile")
+			TNT1 A 0 A_FireCustomMissile("FireballMissile",5)
+			Goto Ready
+		Ball:
+			TNT1 A 0 A_TakeInventory("BallItem",1)
+			TNT1 A 0 A_FireCustomMissile("BallMissile",-90)
+			TNT1 A 0 A_FireCustomMissile("BallMissile",90)
+			Goto Ready
+		Oil:
+			TNT1 A 0 A_TakeInventory("OilItem",1)
+			TNT1 A 0 A_FireCustomMissile("OilMissile")
+			Goto Ready
+		Bomb:
+			TNT1 A 0 A_TakeInventory("BombItem",1)
+			TNT1 A 0 A_FireCustomMissile("BombMissile")
+			Goto Ready
+		Ice:
+			TNT1 A 0 A_TakeInventory("IceItem",1)
+			TNT1 A 0 A_FireCustomMissile("IceMissile")
+			Goto Ready
+	}
+}
+
+Actor GopherMissile
+{
+	Height 16
+	Radius 8
+	Projectile	
+	Speed 30
+	Damage 100
+	SeeSound "weapons/gopher"
+	DeathSound "weapons/gopherhit"
+	States
+	{
+		Spawn:
+			GOPH ABC 3 Bright
+			Loop
+		Death:
+			GOPH DEF 3 Bright
+			Stop
+	}
+}
+
+Actor FireballMissile : GopherMissile
+{
+	SeeSound "weapons/fire"
+	DeathSound "weapons/gopherhit"
+	States
+	{
+		Spawn:
+			FBAL A 1 Bright
+			Loop
+	}
+}
+
+Actor IceHold : Inventory
+{
+	Inventory.MaxAmount 999
+}
+
+Actor IceMissile : GopherMissile
+{
+	States
+	{
+		Spawn:
+			ICEE ABC 3 Bright
+			Loop
+	}
+}
+
+Actor BallMissile
+{
+	Damage 100
+	Speed 15
+	+FLOORHUGGER
+	BounceType Hexen
+	BounceFactor 1.0
+	WallBounceFactor 1.0
+	BounceCount 10
+	Projectile
+	SeeSound "weapons/drop"
+	DeathSound "weapons/gopherhit"
+	States
+	{
+		Spawn:
+			BALL C 1 Bright
+			Loop
+		Death:
+			GOPH DEF 3 Bright
+			Stop
+	}
+}
+
+Actor OilMissile
+{
+	Damage 100
+	Speed 0
+	+FLOORHUGGER
+	Projectile
+	SeeSound "weapons/drop"
+	DeathSound "weapons/gopherhit"
+	States
+	{
+		Spawn:
+			OILS C 1 Bright
+			Loop
+		Death:
+			GOPH DEF 3 Bright
+			Stop
+	}
+}
+
+Actor BombMissile
+{
+	Damage 100
+	Speed 0
+	+FLOORHUGGER
+	Projectile
+	SeeSound "weapons/drop"
+	DeathSound "weapons/gopherhit"
+	States
+	{
+		Spawn:
+			BOMB C 1 Bright
+			Loop
+		Death:
+			GOPH DEF 3 Bright
+			Stop
+	}
+}
+
+Actor GopherAmmo : Ammo
+{
+	Inventory.Amount 4
+	Inventory.MaxAmount 99
+}
+
+Actor WEAPON_GopherSpawner : RandomSpawner 10000
+{
+	Radius 16
+	Height 32
+	
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			GAM1 AB 3
+	}
+	
+	DropItem "Gopher1"
+	DropItem "Gopher2"
+	DropItem "Gopher3"
+	DropItem "Gopher4"
+	DropItem "Gopher5"
+	DropItem "Gopher6"
+	DropItem "Gopher7"
+	DropItem "Gopher8"
+	DropItem "Gopher9"
+	DropItem "Gopher10"
+	DropItem "Gopher11"
+	DropItem "Gopher12"
+	DropItem "Gopher13"
+	DropItem "Gopher14"
+	DropItem "Gopher15"
+	DropItem "Gopher16"
+	DropItem "Gopher17"
+	DropItem "Gopher18"
+}
+
+Actor Gopher1 : CustomInventory
+{
+	Radius 16
+	Height 32
+	
+	+NOGRAVITY
+
+	Inventory.Amount 4
+	Inventory.MaxAmount 99
+	Inventory.PickupMessage "Hedgehogs!"
+	Inventory.PickupSound "nosound"
+	
+	Inventory.RespawnTics 700
+	
+	States
+	{
+		Spawn:
+			GAM1 AB 3
+			Loop
+		Pickup:
+			TNT1 A 0 A_GiveInventory(GopherAmmo,4)
+			TNT1 A 0 A_PlaySound("*grunt")
+			Stop
+	}
+}
+
+Actor Gopher2 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM2 ABCD 3
+			Loop
+	}
+}
+
+Actor Gopher3 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM3 AB 3
+			Loop
+	}
+}
+
+Actor Gopher4 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM4 AB 3
+			Loop
+	}
+}
+
+Actor Gopher5 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM5 AB 3
+			Loop
+	}
+}
+
+Actor Gopher6 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM6 ABCB 3
+			Loop
+	}
+}
+
+Actor Gopher7 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM7 ABCD 3
+			Loop
+	}
+}
+
+Actor Gopher8 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM8 ABCD 3
+			Loop
+	}
+}
+
+Actor Gopher9 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GAM9 ABCB 3
+			Loop
+	}
+}
+
+Actor Gopher10 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM10 ABCB 3
+			Loop
+	}
+}
+
+Actor Gopher11 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM11 ABCDEF 3
+			Loop
+	}
+}
+
+Actor Gopher12 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM12 ABCD 3
+			Loop
+	}
+}
+
+Actor Gopher13 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM13 ABCDEF 3
+			Loop
+	}
+}
+
+Actor Gopher14 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM14 ABCDEFG 3
+			Loop
+	}
+}
+
+Actor Gopher15 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM15 ABCDEF 3
+			Loop
+	}
+}
+
+Actor Gopher16 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM16 ABCDEF 3
+			Loop
+	}
+}
+
+Actor Gopher17 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM17 ABCDE 3
+			Loop
+	}
+}
+
+Actor Gopher18 : Gopher1
+{
+	States
+	{
+		Spawn:
+			GM18 AB 3
+			Loop
+	}
+}
+
+Actor WEAPON_Fireballs : CustomInventory 10001
+{
+	Radius 16
+	Height 32
+
+	Inventory.PickupMessage "Fire!"
+	Inventory.PickupSound "nosound"
+	Inventory.RespawnTics 700
+
+	States
+	{
+		Spawn:
+			FIRE AB 3 Bright
+			Loop
+		Pickup:
+			TNT1 A 0 A_TakeInventory("IceItem", 1)
+			TNT1 A 0 A_TakeInventory("OilItem", 1)
+			TNT1 A 0 A_TakeInventory("BallItem", 1)
+			TNT1 A 0 A_TakeInventory("BombItem", 1)
+			TNT1 A 0 A_GiveInventory("FireballItem", 1)
+			TNT1 A 0 A_PlaySound("*grunt")
+			Stop
+	}
+}
+
+Actor WEAPON_OilSlick : CustomInventory 10002
+{
+	Radius 16
+	Height 32
+
+	Inventory.PickupMessage "Oil Slick!"
+	Inventory.PickupSound "nosound"
+	Inventory.RespawnTics 700
+
+	States
+	{
+		Spawn:
+			OILS AB 3 Bright
+			Loop
+		Pickup:
+			TNT1 A 0 A_TakeInventory("IceItem", 1)
+			TNT1 A 0 A_TakeInventory("FireballItem", 1)
+			TNT1 A 0 A_TakeInventory("BallItem", 1)
+			TNT1 A 0 A_TakeInventory("BombItem", 1)
+			TNT1 A 0 A_GiveInventory("OilItem", 1)
+			TNT1 A 0 A_PlaySound("*grunt")
+			Stop
+	}
+}
+
+Actor WEAPON_RedBalls : CustomInventory 10003
+{
+	Radius 16
+	Height 32
+
+	Inventory.PickupMessage "Ball!"
+	Inventory.PickupSound "nosound"
+	Inventory.RespawnTics 700
+
+	States
+	{
+		Spawn:
+			BALL AB 3 Bright
+			Loop
+		Pickup:
+			TNT1 A 0 A_TakeInventory("IceItem", 1)
+			TNT1 A 0 A_TakeInventory("FireballItem", 1)
+			TNT1 A 0 A_TakeInventory("OilItem", 1)
+			TNT1 A 0 A_TakeInventory("BombItem", 1)
+			TNT1 A 0 A_GiveInventory("BallItem", 1)
+			TNT1 A 0 A_PlaySound("*grunt")
+			Stop
+	}
+}
+
+Actor WEAPON_Bombs : CustomInventory 10004
+{
+	Radius 16
+	Height 32
+
+	Inventory.PickupMessage "Bomb!"
+	Inventory.PickupSound "nosound"
+	Inventory.RespawnTics 700
+
+	States
+	{
+		Spawn:
+			BOMB AB 3 Bright
+			Loop
+		Pickup:
+			TNT1 A 0 A_TakeInventory("IceItem", 1)
+			TNT1 A 0 A_TakeInventory("FireballItem", 1)
+			TNT1 A 0 A_TakeInventory("OilItem", 1)
+			TNT1 A 0 A_TakeInventory("BallItem", 1)
+			TNT1 A 0 A_GiveInventory("BombItem", 1)
+			TNT1 A 0 A_PlaySound("*grunt")
+			Stop
+	}
+}
+
+// ---------------------- DECOR ----------------------
+
+Actor SolidDecor
+{
+	Radius 16
+	Height 32
+	+SOLID
+	+NOGRAVITY
+}
+
+Actor DECOR_YellowBarrel : SolidDecor 10005
+{
+	States
+	{
+		Spawn:
+			DEC1 A -1
+			Stop
+	}
+}
+
+Actor DECOR_WaterPole : SolidDecor 10006
+{
+	States
+	{
+		Spawn:
+			DEC2 A -1
+			Stop
+	}
+}

@@ -1,0 +1,156 @@
+0005 Duke: *** DUKE ***
+0006 Duke: *** DUKE ***
+000E Decoration: nuclear waste can, empty
+0013 Box: green box - rocket launcher
+0014 Box: green box - flame thrower
+0016 Box: green box - normal weapon, yeh thanks for nuthin
+0017 Box: green box - laser
+001C Box: blue box - health molecule
+001F Badguy: fast green cat, ->
+0020 Badguy: fast green cat, <-
+0025 Box: white box - circuit card
+0026 Badguy: flamethrower
+0027 Badguy: flamethrower
+002A Box: red box - bomb
+002D Bonus: blue globe
+002E Bonus: blue globe
+002F Bonus: blue globe
+0030 Bonus: blue globe
+0031 Badguy: bouncing sentry robot
+0032 Teleport: teleport
+0033 Teleport: teleport
+0035 Box: white box - rapid fire
+0036 Obstacle: rocket launcher turret
+003A : bouncing sentry robot
+003E : bomb dropping spaceship
+0040 Obstacle: bouncing spike ball
+0042 Obstacle: electric current door
+0043 Badguy: green slime ball
+0044 Badguy: green slime container
+004B Obstacle: nuclear waste can, green slime inside
+004E Badguy: snake
+004F Camera: on ceiling
+0050 Camera: on floor
+0051 Badguy: green hanging suction plant
+0052 Trigger: causes object to right to appear only in med/hard difficulty
+0053 Trigger: causes object to right to appear only in hard difficulty
+0057 :Duke's Ship
+005D :force shield - need cloaking device
+005F :rocket - falls over and explodes
+0061 Badguy: cross walker
+0062 Badguy: eyeball bomber plant
+0065 Badguy: BOSS Episode 2
+0066 Explosive: explosive charge
+0067 Explosive: explosive charge
+0068 Explosive: explosive charge
+006A Explosive: explosive charge
+0072 Box: white box - cloaking device
+0073 Badguy: sentry robot generator
+0074 Explosive: explosive charge
+0075 Obstacle: pipe dripping green stuff
+0077 Door: circuit card door
+0078 Door: circuit card keyhole
+0079 Box: white box - blue key
+007A Door: blue key keyhole
+0080 Door: auto-open vertical door
+0081 Door: keyhole mounting pole
+0080 Door: automatic door
+0082 :vertical fan
+0083 Obstacle: swivel gun
+0084 Door: sliding floors by ladders
+0085 Special: sector marker
+0086 Badguy: skeleton
+0089 Explosive: explosive charge
+008A Explosive: explosive charge
+008B Special: exit
+008C Obstacle: swivel gun mounting post
+008E Explosive: explosive charge
+008F Explosive: explosive charge
+0090 :rocket
+0094 Box: blue box - empty
+0096 Badguy: metal crunch jaws
+0097 Badguy: floating split laser ball
+009A Badguy: spider
+009B Box: blue box - N
+009C Box: blue box - U
+009D Box: blue box - K
+009E Box: blue box - E
+009F Badguy: blue guard
+00A0 Box: blue box - video game cartridge
+00A1 Box: white box - empty
+00A2 Box: green box - empty
+00A3 Box: red box - empty
+00A4 Box: blue box - empty
+00A8 Box: red box - cola
+00AB Badguy: blue guard
+00AC Box: blue box - sunglasses
+00AD Box: blue box - phone
+00AE Box: red box - 6 pack cola
+00B0 Badguy: green ugly bird
+00B5 Box: blue box - boom box
+00B6 Badguy: blue guard
+00B7 Box: blue box - TV
+00B8 Box: blue box - camera
+00B9 Box: blue box - PC
+00BA Box: blue box - CD
+00BB Box: blue box - M
+00BC Obstacle: rotating floor spikes
+00BD Badguy: leaping gargoyle
+00BE Badguy: stone statue
+00C8 Badguy: BOSS Episode 1
+00C9 Box: red box - turkey
+00CB Badguy: bird
+00D0 Decoration: floating exit sign
+00D1 Special: rocket elevator
+00D2 Special: message box
+00D4 :lava surface
+00D5 Badguy: flying message ship "YOUR BRAIN IS OURS"
+00D6 Badguy: flying message ship "BRING BACK THE BRAIN"
+00D7 Badguy: flying message ship "LIVE FROM RIGEL IT'S SATURDAY NIGHT"
+00D8 Badguy: flying message ship "DIE"
+00D9 Badguy: blue guard
+00DB Obstacle: smasher
+00DC Badguy: flying message ship "YOU CANNOT ESCAPE US YOU WILL GET YOUR BRAIN SUCKED"
+00DD :water depths
+00DE :lava fall
+00DF :lava fall
+00E0 :water fall
+00E1 :water fall
+00E3 :water drip
+00E4 :water fall spash 
+00E5 :water fall bubble
+00E6 :water fall
+00E7 :lava riser
+00E9 :water surface
+00EA :water surface bubble
+00EB :green slime liquid
+00EC :radar antenna
+00ED :message box
+00EF :special hint globe
+00F0 :hint machine
+00F1 Trigger: generates windblown spiders when touched
+00F4 Badguy: small unicycle
+00F6 Obstacle: flame jet
+00F7 Obstacle: flame jet
+00F8 Obstacle: flame jet
+00F9 Obstacle: flame jet
+00FA :?
+00FB :?
+00FC Decoration: floating exit sign
+00FD Badguy: caged claw monster, active
+00FE Decoration: flashpot
+0101 :water on floor
+0102 :water on floor
+0105 Decoration: caged claw monster, inactive
+0106 Obstacle: fire on floor
+0107 Obstacle: fire on floor
+0109 Badguy: BOSS Episode 3
+010F Badguy: small flying ship
+0110 Badguy: small flying ship
+0111 Badguy: small flying ship
+0112 Box: blue box - T shirt
+0113 Box: blue box - videocassette
+0117 Badguy: BOSS Episode 4
+0128 Decoration: floating arrow
+012B Badguy: swamp monster
+0160 Box: blue box - video

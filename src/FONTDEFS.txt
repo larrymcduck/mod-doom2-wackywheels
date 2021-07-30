@@ -1,0 +1,27 @@
+WACKY
+{
+	0 WW0
+	1 WW1
+	2 WW2
+	3 WW3
+	4 WW4
+	5 WW5
+	6 WW6
+	7 WW7
+	8 WW8
+	9 WW9
+}
+
+WACKY2
+{
+	0 WW_0
+	1 WW_1
+	2 WW_2
+	3 WW_3
+	4 WW_4
+	5 WW_5
+	6 WW_6
+	7 WW_7
+	8 WW_8
+	9 WW_9
+}
